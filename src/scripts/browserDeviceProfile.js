@@ -492,9 +492,6 @@ export function canPlaySecondaryAudio(videoTestElement) {
         if (canPlayAudioFormat('opus')) {
             videoAudioCodecs.push('opus');
             webmAudioCodecs.push('opus');
-            if (browser.tizen) {
-                hlsInTsVideoAudioCodecs.push('opus');
-            }
         }
 
         // FLAC audio in video plays with a delay on Tizen
