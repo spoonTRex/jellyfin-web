@@ -574,7 +574,7 @@ export default function (options) {
         videoAudioCodecs.push('opus');
         webmAudioCodecs.push('opus');
         if (browser.tizen) {
-            hlsInTsVideoAudioCodecs.push('opus');
+            return false;
         }
         if (!browser.safari) {
             hlsInFmp4VideoAudioCodecs.push('opus');
